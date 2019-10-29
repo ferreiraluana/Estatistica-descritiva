@@ -1,5 +1,5 @@
 # Display table
-file <- read.csv("table.csv", sep = ",")
+file <- read.csv("table.csv",TRUE,sep = ",")
 print(file)
 
 # Display specific column
