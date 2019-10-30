@@ -1,3 +1,4 @@
+
 # Table with IMC column
 
 file <- read.csv("table.csv",TRUE,sep = ",")
@@ -51,3 +52,25 @@ print(mean(file1$Altura.m.))
 
 print("O IMC médio das pessoas é:")
 print(mean(file1$IMC))
+
+# Median
+
+print("A mediana do Peso(kg) das pessoas é:")
+print(median(file1$Peso.kg.))
+
+print("A mediana da Altura(m) das pessoas é:")
+print(median(file1$Altura.m.))
+
+print("A mediana do IMC das pessoas é:")
+print(median(file1$IMC))
+
+# Standard Deviation
+
+print("O desvio-padrão do Peso médio das pessoas é:")
+print(sd(file1$Peso.kg.))
+
+print("O desvio-padrão da Altura(m) média das pessoas é:")
+print(sd(file1$Altura.m.))
+
+print("O desvio-padrão do IMC médio das pessoas é:")
+print(sd(file1$IMC))
