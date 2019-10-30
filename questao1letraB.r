@@ -17,13 +17,27 @@ IMC.frequence <- table(file$IMC)
 print("Tabela de frequência absoluta do IMC:")
 print(IMC.frequence)
 
-# Display IMC relative frequence
- 
+# Display relative frequencies
+
+Peso.kg.relative.frequence <- prop.table(Peso.kg.frequence)
+print("Tabela de frequência relativa do Peso(kg):")
+print(Peso.kg.relative.frequence)
+
+Altura.m.relative.frequence <- prop.table(Altura.m.frequence)
+print("Tabela de frequência relativa da Altura(m):")
+print(Altura.m.relative.frequence)
+
 IMC.relative.frequence <- prop.table(IMC.frequence)
 print("Tabela de frequência relativa do IMC:")
 print(IMC.relative.frequence)
 
-# Display the percentage of IMC relative frequence
+# Display the percentage of relative frequencies
 
-IMC.percentage.relative.frequence <- IMC.relative.frequence*100
-print(IMC.percentage.relative.frequence)
+print("Tabela de porcentagem da frequência relativa do Peso(kg):")
+print(Peso.kg.relative.frequence)
+
+print("Tabela de porcentagem da frequência relativa da Altura(m):")
+print(Altura.m.relative.frequence*100)
+
+print("Tabela de porcentagem da frequência relativa do IMC:")
+print(IMC.relative.frequence*100)
