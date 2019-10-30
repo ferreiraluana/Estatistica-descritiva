@@ -48,3 +48,6 @@ print(mean(file1$Peso.kg.))
 
 print("A altura média das pessoas é:")
 print(mean(file1$Altura.m.))
+
+print("O IMC médio das pessoas é:")
+print(mean(file1$IMC))
