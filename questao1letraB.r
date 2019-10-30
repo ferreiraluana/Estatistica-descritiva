@@ -34,7 +34,7 @@ print(IMC.relative.frequence)
 # Display the percentage of relative frequencies
 
 print("Tabela de porcentagem da frequência relativa do Peso(kg):")
-print(Peso.kg.relative.frequence)
+print(Peso.kg.relative.frequence*100)
 
 print("Tabela de porcentagem da frequência relativa da Altura(m):")
 print(Altura.m.relative.frequence*100)
