@@ -1,6 +1,6 @@
 # Table with IMC column
 
-file <- read.csv("tablej.csv",TRUE,sep = ",")
+file <- read.csv("table.csv",TRUE,sep = ",")
 file$IMC<- (file$Peso/(file$Altura)^2)
 
 # Display absolute frequencies
