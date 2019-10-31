@@ -67,3 +67,7 @@ write.table(p, file = "desvio_padrao.txt", sep = "", row.names = FALSE, col.name
 
 decil4 <- quantile(file$IMC, prob = seq(0, 1, length = 11), type = 5)[5]
 
+# Boxplot
+
+boxplot(file$IMC,main="Boxplot")
+points (1, mean(file$IMC), col = 6, pch =19)
