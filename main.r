@@ -62,3 +62,8 @@ r <- paste("O desvio-padrão do Peso médio das pessoas é:"," ",sd(file1$Peso.k
            "O desvio-padrão da Altura(m) média das pessoas é:", " ", sd(file1$Altura.m.), "\n",
            "O desvio-padrão do IMC médio das pessoas é:", " ", sd(file1$IMC))
 write.table(p, file = "desvio_padrao.txt", sep = "", row.names = FALSE, col.names = FALSE)
+
+# Decile
+
+decil4 <- quantile(file$IMC, prob = seq(0, 1, length = 11), type = 5)[5]
+
