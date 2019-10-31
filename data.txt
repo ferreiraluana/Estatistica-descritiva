@@ -13,6 +13,9 @@
  (e)
  O decil D4 do IMC é: 20.56121
 
+ (f)
+ A moda pelo Método de Czuber é: 25.11111
+
  (g)
  O desvio-padrão do Peso médio das pessoas é:   13.4987479197998 
  O desvio-padrão da Altura(m) média das pessoas é:   0.10564525327827 
