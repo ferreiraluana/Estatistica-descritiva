@@ -1,0 +1,11 @@
+"O peso médio das pessoas é:   64.4033333333333 
+ A altura média das pessoas é:   1.67666666666667 
+ O IMC médio das pessoas é:   22.8709364264127 
+
+ A mediana do Peso(kg) das pessoas é:   65.75 
+ A mediana da Altura(m) das pessoas é:   1.65 
+ A mediana do IMC das pessoas é:   22.8546908421601 
+
+ O desvio-padrão do Peso médio das pessoas é:   13.4987479197998 
+ O desvio-padrão da Altura(m) média das pessoas é:   0.10564525327827 
+ O desvio-padrão do IMC médio das pessoas é:   4.31935237939097"
