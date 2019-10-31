@@ -44,33 +44,21 @@ write.csv(IMC.relative.frequence*100, "Imc_freq_rel_porc.csv", row.names = FALSE
 
 file1 <- read.csv("table_imc.csv",TRUE, sep = ",")
 
-print("O peso médio das pessoas é:")
-print(mean(file1$Peso.kg.))
-
-print("A altura média das pessoas é:")
-print(mean(file1$Altura.m.))
-
-print("O IMC médio das pessoas é:")
-print(mean(file1$IMC))
+p <- paste("O peso médio das pessoas é:"," ",mean(file1$Peso.kg.), "\n",
+           "A altura média das pessoas é:", " ", mean(file1$Altura.m.), "\n",
+           "O IMC médio das pessoas é:", " ", mean(file1$IMC))
+write.table(p, file = "mean.txt", sep = "", row.names = FALSE, col.names = FALSE)
 
 # Median
 
-print("A mediana do Peso(kg) das pessoas é:")
-print(median(file1$Peso.kg.))
-
-print("A mediana da Altura(m) das pessoas é:")
-print(median(file1$Altura.m.))
-
-print("A mediana do IMC das pessoas é:")
-print(median(file1$IMC))
+q <- paste("A mediana do Peso(kg) das pessoas é:"," ",median(file1$Peso.kg.), "\n",
+           "A mediana da Altura(m) das pessoas é:", " ", median(file1$Altura.m.), "\n",
+           "A mediana do IMC das pessoas é:", " ", median(file1$IMC))
+write.table(q, file = "median.txt", sep = "", row.names = FALSE, col.names = FALSE)
 
 # Standard Deviation
 
-print("O desvio-padrão do Peso médio das pessoas é:")
-print(sd(file1$Peso.kg.))
-
-print("O desvio-padrão da Altura(m) média das pessoas é:")
-print(sd(file1$Altura.m.))
-
-print("O desvio-padrão do IMC médio das pessoas é:")
-print(sd(file1$IMC))
+r <- paste("O desvio-padrão do Peso médio das pessoas é:"," ",sd(file1$Peso.kg.), "\n",
+           "O desvio-padrão da Altura(m) média das pessoas é:", " ", sd(file1$Altura.m.), "\n",
+           "O desvio-padrão do IMC médio das pessoas é:", " ", sd(file1$IMC))
+write.table(p, file = "desvio_padrao.txt", sep = "", row.names = FALSE, col.names = FALSE)
